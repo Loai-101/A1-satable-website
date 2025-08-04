@@ -35,7 +35,18 @@ function App() {
           
           <footer className="footer">
             <div className="container">
-              <p>&copy; 2024 A1 Stable. All rights reserved.</p>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                <p>&copy; 2024 A1 Stable - Sponsor by PMI - All rights reserved.</p>
+                <img 
+                  src="https://res.cloudinary.com/dvybb2xnc/image/upload/v1754304517/PMI_Circile_Red_od7mix.png" 
+                  alt="PMI Logo" 
+                  style={{ height: '30px', width: 'auto' }}
+                  onError={(e) => {
+                    console.log('PMI logo failed to load, trying alternative format');
+                    e.target.src = "https://res.cloudinary.com/dvybb2xnc/image/upload/v1754304517/PMI_Circile_Red_od7mix.jpg";
+                  }}
+                />
+              </div>
             </div>
           </footer>
         </div>
