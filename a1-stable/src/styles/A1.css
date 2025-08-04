@@ -1,0 +1,485 @@
+/* ==========================================
+   A1 Team Page Styles
+   ========================================== */
+
+/* Main page container */
+.a1-team-page {
+  background: #F8F1EA;
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+/* Hero section with A1 logo and title */
+.hero-section {
+  background: linear-gradient(135deg, rgba(139, 92, 44, 0.8), rgba(139, 0, 0, 0.8)), url('https://res.cloudinary.com/dvybb2xnc/image/upload/v1754242068/WhatsApp_Image_2025-08-03_at_20.15.46_e842bd3a_vxgaxy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Hero content container */
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* A1 logo styling */
+.hero-logo {
+  margin-bottom: 3rem;
+  max-width: 250px;
+  max-height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.hero-logo img {
+  border: none;
+  outline: none;
+  background: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-logo:hover {
+  transform: scale(1.08) translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.hero-logo:hover img {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Hero title and subtitle */
+.hero-title {
+  font-size: 4.5rem;
+  color: #F8F1EA;
+  margin-bottom: 1.5rem;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #F8F1EA;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+  font-family: Georgia, serif;
+  opacity: 0.95;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Scroll indicator animation */
+.scroll-indicator {
+  margin-top: 4rem;
+  text-align: center;
+  color: #F8F1EA;
+  opacity: 0.9;
+}
+
+.scroll-text {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  opacity: 0.9;
+  font-family: Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.scroll-arrow {
+  font-size: 2rem;
+  animation: bounce 2.5s infinite;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+
+
+/* Team section styling */
+.team-section {
+  padding: 5rem 0;
+  background: #F8F1EA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section title with decorative underline */
+.section-title {
+  font-size: 3rem;
+  color: #8B5C2C;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #8B5C2C, #8B0000);
+  border-radius: 2px;
+}
+
+/* Team grid layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Individual team card styling */
+.team-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(139, 92, 44, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139, 92, 44, 0.1);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(139, 92, 44, 0.2);
+}
+
+/* Card image container */
+.card-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(139, 92, 44, 0.1), rgba(139, 0, 0, 0.1));
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover .card-image::before {
+  opacity: 1;
+}
+
+/* Rider image styling */
+.rider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .rider-image {
+  transform: scale(1.05);
+}
+
+/* Fix Ali Hussain image positioning - first card */
+.team-card:first-child .rider-image {
+  object-position: center 30%;
+}
+
+/* ==========================================
+   A1 Riding Kit Section Styles
+   ========================================== */
+
+/* A1 Riding Kit Section */
+.a1-riding-kit-section {
+  padding: 4rem 0;
+  background: #F8F1EA;
+}
+
+/* 3D Carousel Container */
+.a1-riding-kit-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  perspective: 1000px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  left: 25px;
+  top: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:nth-child(1) {
+  transform: rotateY(0deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(2) {
+  transform: rotateY(90deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(3) {
+  transform: rotateY(180deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(4) {
+  transform: rotateY(270deg) translateZ(200px);
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item:hover .carousel-img {
+  transform: scale(1.1);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Pause animation on hover */
+.carousel-container:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive design for A1 Riding Kit */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 250px;
+    height: 350px;
+  }
+  
+  .carousel-item {
+    width: 200px;
+    height: 300px;
+    left: 25px;
+    top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 200px;
+    height: 300px;
+  }
+  
+  .carousel-item {
+    width: 150px;
+    height: 250px;
+    left: 25px;
+    top: 25px;
+  }
+}
+
+/* Card content area */
+.card-content {
+  padding: 1.5rem;
+}
+
+.rider-name {
+  font-size: 1.4rem;
+  color: #8B5C2C;
+  margin-bottom: 0.5rem;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+.rider-role {
+  font-size: 1rem;
+  color: #8B0000;
+  margin-bottom: 1rem;
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+
+/* Rider quote styling */
+.rider-quote {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(145deg, #F8F1EA, #e8e1da);
+  border-radius: 10px;
+  border-left: 4px solid #8B5C2C;
+}
+
+.quote-text {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+  color: #8B5C2C;
+  line-height: 1.5;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+    min-height: 50vh;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  .hero-logo {
+    max-width: 200px;
+    max-height: 120px;
+  }
+  
+  .scroll-text {
+    font-size: 1rem;
+  }
+  
+  .scroll-arrow {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 3rem auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 3rem 0;
+    min-height: 40vh;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+  
+  .hero-logo {
+    max-width: 180px;
+    max-height: 100px;
+  }
+  
+  .scroll-text {
+    font-size: 0.9rem;
+  }
+  
+  .scroll-arrow {
+    font-size: 1.3rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .rider-name {
+    font-size: 1.2rem;
+  }
+} 

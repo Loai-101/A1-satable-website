@@ -1,0 +1,118 @@
+/* ==========================================
+   TShirtCarousel Component Styles
+   ========================================== */
+
+/* Main container for the 3D carousel section */
+.tshirt-carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(145deg, #F8F1EA, #e8e1da);
+  border-radius: 20px;
+  margin-top: 2rem;
+  box-shadow: 0 15px 35px rgba(139, 92, 44, 0.15);
+  border: 2px solid rgba(139, 92, 44, 0.1);
+}
+
+/* Title styling for "A1 Uniform" */
+.tshirt-carousel-title {
+  color: #8B5C2C;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: Georgia, serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 3D perspective container for the carousel */
+.tshirt-carousel-perspective {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The rotating 3D carousel element */
+.tshirt-carousel-rotator {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+}
+
+/* Individual slide containers positioned in 3D space */
+.tshirt-carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Front slide (0 degrees) */
+.tshirt-carousel-slide-front {
+  transform: rotateY(0deg) translateZ(150px);
+}
+
+/* Back slide (180 degrees) */
+.tshirt-carousel-slide-back {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+/* Left side slide (-90 degrees) */
+.tshirt-carousel-slide-left {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+/* Right side slide (90 degrees) */
+.tshirt-carousel-slide-right {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+/* Image styling within each slide */
+.tshirt-carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(139, 92, 44, 0.3);
+  border: 3px solid #8B5C2C;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .tshirt-carousel-perspective {
+    max-width: 500px;
+    height: 350px;
+  }
+  
+  .tshirt-carousel-rotator {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .tshirt-carousel-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tshirt-carousel-perspective {
+    max-width: 400px;
+    height: 300px;
+  }
+  
+  .tshirt-carousel-rotator {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .tshirt-carousel-title {
+    font-size: 1.8rem;
+  }
+} 

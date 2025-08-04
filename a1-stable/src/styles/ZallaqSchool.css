@@ -1,0 +1,1082 @@
+/* ==========================================
+   Zallaq School Page Styles
+   ========================================== */
+
+/* Main page container */
+.zallaq-school-page {
+  background: #F8F1EA;
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+/* Hero section with Zallaq logo and title */
+.zallaq-school-page .hero-section {
+  background: linear-gradient(135deg, rgba(139, 92, 44, 0.8), rgba(139, 0, 0, 0.8)), url('https://res.cloudinary.com/dvybb2xnc/image/upload/v1754225929/freepik_edit_Candid-photography-with-natural-textures-and-highl_eemvwy.png') !important;
+  background-image: linear-gradient(135deg, rgba(139, 92, 44, 0.8), rgba(139, 0, 0, 0.8)), url('https://res.cloudinary.com/dvybb2xnc/image/upload/v1754225929/freepik_edit_Candid-photography-with-natural-textures-and-highl_eemvwy.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Hero content container */
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Zallaq logo styling */
+.hero-logo {
+  margin-bottom: 3rem;
+  max-width: 250px;
+  max-height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.hero-logo img,
+.hero-logo .optimized-image-container img {
+  border: none;
+  outline: none;
+  background: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.optimized-image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.image-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 8px;
+  min-height: 100px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.hero-logo:hover {
+  transform: scale(1.08) translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.hero-logo:hover img {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Hero title and subtitle */
+.hero-title {
+  font-size: 4.5rem;
+  color: #F8F1EA;
+  margin-bottom: 1.5rem;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #F8F1EA;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+  font-family: Georgia, serif;
+  opacity: 0.95;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Scroll indicator animation */
+.scroll-indicator {
+  margin-top: 4rem;
+  text-align: center;
+  color: #F8F1EA;
+  opacity: 0.9;
+}
+
+.scroll-text {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  opacity: 0.9;
+  font-family: Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.scroll-arrow {
+  font-size: 2rem;
+  animation: bounce 2.5s infinite;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+
+
+/* Container for page content */
+.zallaq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header section with logo and title */
+.zallaq-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.zallaq-logo {
+  max-width: 200px;
+  max-height: 120px;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 4px 8px rgba(139, 92, 44, 0.2));
+}
+
+.zallaq-title {
+  font-size: 3rem;
+  color: #8B5C2C;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+/* Main content section */
+.zallaq-content {
+  background: linear-gradient(145deg, #F8F1EA, #e8e1da);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(139, 92, 44, 0.15);
+  margin-bottom: 2rem;
+  border: 2px solid rgba(139, 92, 44, 0.1);
+}
+
+.zallaq-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 2rem;
+  font-family: Georgia, serif;
+}
+
+/* Services grid layout */
+.zallaq-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Individual service card */
+.zallaq-service-card {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(145deg, #F8F1EA, #e8e1da);
+  border-radius: 15px;
+  border: 2px solid rgba(139, 92, 44, 0.1);
+  transition: all 0.3s ease;
+}
+
+.zallaq-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(139, 92, 44, 0.2);
+}
+
+/* Service icon styling */
+.zallaq-service-icon {
+  font-size: 3rem;
+  color: #8B5C2C;
+  margin-bottom: 1rem;
+}
+
+/* Service title */
+.zallaq-service-title {
+  color: #8B5C2C;
+  margin-bottom: 1rem;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+}
+
+/* Service description */
+.zallaq-service-description {
+  font-family: Georgia, serif;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* WhatsApp card specific styles */
+.whatsapp-card {
+  background: linear-gradient(145deg, #25D366, #128C7E) !important;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-icon {
+  color: white !important;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-card .zallaq-service-title {
+  color: white !important;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-card .zallaq-service-description {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-bottom: 1.5rem;
+}
+
+.whatsapp-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.whatsapp-button {
+  background: white;
+  color: #25D366;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover {
+  background: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Registration card specific styles */
+.registration-card {
+  background: linear-gradient(145deg, #4285F4, #1a73e8) !important;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.registration-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(66, 133, 244, 0.4);
+}
+
+.registration-icon {
+  color: white !important;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.registration-card .zallaq-service-title {
+  color: white !important;
+  margin-bottom: 1rem;
+}
+
+.registration-card .zallaq-service-description {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-bottom: 1.5rem;
+}
+
+.registration-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.registration-button {
+  background: white;
+  color: #4285F4;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.registration-button:hover {
+  background: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Instagram card specific styles */
+.instagram-card {
+  background: linear-gradient(145deg, #E4405F, #C13584) !important;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.instagram-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(228, 64, 95, 0.4);
+}
+
+.instagram-icon {
+  color: white !important;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.instagram-card .zallaq-service-title {
+  color: white !important;
+  margin-bottom: 1rem;
+}
+
+.instagram-card .zallaq-service-description {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-bottom: 1.5rem;
+}
+
+.instagram-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.instagram-button {
+  background: white;
+  color: #E4405F;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-button:hover {
+  background: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card button styling */
+.zallaq-service-card .whatsapp-link,
+.zallaq-service-card .registration-link,
+.zallaq-service-card .instagram-link {
+  display: inline-block;
+  width: auto;
+  margin-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+    min-height: 50vh;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  .hero-logo {
+    max-width: 200px;
+    max-height: 120px;
+  }
+  
+  .scroll-text {
+    font-size: 1rem;
+  }
+  
+  .scroll-arrow {
+    font-size: 1.5rem;
+  }
+  
+  .zallaq-title {
+    font-size: 2.5rem;
+  }
+  
+  .zallaq-content {
+    padding: 2rem;
+  }
+  
+  .zallaq-services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 3rem 0;
+    min-height: 40vh;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+  
+  .hero-logo {
+    max-width: 180px;
+    max-height: 100px;
+  }
+  
+  .scroll-text {
+    font-size: 0.9rem;
+  }
+  
+  .scroll-arrow {
+    font-size: 1.3rem;
+  }
+  
+  .zallaq-title {
+    font-size: 2rem;
+  }
+  
+  .zallaq-content {
+    padding: 1.5rem;
+  }
+  
+  .zallaq-service-card {
+    padding: 1.5rem;
+  }
+}
+
+/* ==========================================
+   Roadmap Section Styles
+   ========================================== */
+
+/* Container for consistent max-width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+  padding: 0.5rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.roadmap-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23e0e0e0"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: #8B5C2C;
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(139, 92, 44, 0.1);
+  background: linear-gradient(135deg, #8B5C2C, #8B0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #8B5C2C, #8B0000);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(139, 92, 44, 0.3);
+}
+
+/* Roadmap image slider */
+.roadmap-image {
+  width: 100%;
+  height: 30rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  margin-top: 0.1rem;
+  position: relative;
+}
+
+.roadmap-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.roadmap-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.roadmap-slide.active {
+  opacity: 1;
+}
+
+.roadmap-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.roadmap-slide:hover .roadmap-img {
+  transform: scale(1.02);
+}
+
+/* Slider dots */
+.roadmap-slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #8B5C2C;
+}
+
+.dot:hover {
+  background-color: #8B5C2C;
+  opacity: 0.8;
+}
+
+/* Placeholder content */
+.placeholder-content {
+  text-align: center;
+}
+
+.placeholder-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.placeholder-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-subtext {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Responsive design for roadmap */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  
+  .roadmap-image {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+  
+  .roadmap-image {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .roadmap-section {
+    padding: 2rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .roadmap-image {
+    height: 20rem;
+  }
+}
+
+/* ==========================================
+   Endurance Race Section Styles
+   ========================================== */
+
+/* Endurance Race Section */
+.endurance-race-section {
+  padding: 1rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.endurance-race-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23e0e0e0"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Endurance race image slider */
+.endurance-race-image {
+  width: 100%;
+  height: 30rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  margin-top: 0.1rem;
+  position: relative;
+}
+
+.endurance-race-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.endurance-race-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.endurance-race-slide.active {
+  opacity: 1;
+}
+
+.endurance-race-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.endurance-race-slide:hover .endurance-race-img {
+  transform: scale(1.02);
+}
+
+/* Endurance race slider dots */
+.endurance-race-slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.endurance-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.endurance-dot.active {
+  background-color: #8B5C2C;
+}
+
+.endurance-dot:hover {
+  background-color: #8B5C2C;
+  opacity: 0.8;
+}
+
+/* Responsive design for endurance race */
+@media (min-width: 768px) {
+  .endurance-race-image {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .endurance-race-image {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .endurance-race-section {
+    padding: 2rem 0;
+  }
+  
+  .endurance-race-image {
+    height: 20rem;
+  }
+}
+
+/* ==========================================
+   Subscription Packages Section Styles
+   ========================================== */
+
+/* Subscription Packages Section */
+.subscription-packages-section {
+  padding: 1rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.subscription-packages-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23e0e0e0"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Subscription packages image slider */
+.subscription-packages-image {
+  width: 100%;
+  height: 30rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  margin-top: 0.1rem;
+  position: relative;
+}
+
+.subscription-packages-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.subscription-packages-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.subscription-packages-slide.active {
+  opacity: 1;
+}
+
+/* Subscription packages slider dots */
+.subscription-packages-slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.subscription-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscription-dot.active {
+  background-color: #8B5C2C;
+}
+
+.subscription-dot:hover {
+  background-color: #8B5C2C;
+  opacity: 0.8;
+}
+
+.subscription-packages-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.subscription-packages-slide:hover .subscription-packages-img {
+  transform: scale(1.02);
+}
+
+/* Responsive design for subscription packages */
+@media (min-width: 768px) {
+  .subscription-packages-image {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscription-packages-image {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .subscription-packages-section {
+    padding: 2rem 0;
+  }
+  
+  .subscription-packages-image {
+    height: 20rem;
+  }
+}
+
+/* ==========================================
+   Zallaq Riding Kit Section Styles
+   ========================================== */
+
+/* Zallaq Riding Kit Section */
+.zallaq-riding-kit-section {
+  padding: 1rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.zallaq-riding-kit-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23e0e0e0"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* 3D Carousel Container */
+.zallaq-riding-kit-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  perspective: 1000px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  left: 25px;
+  top: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:nth-child(1) {
+  transform: rotateY(0deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(2) {
+  transform: rotateY(90deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(3) {
+  transform: rotateY(180deg) translateZ(200px);
+}
+
+.carousel-item:nth-child(4) {
+  transform: rotateY(270deg) translateZ(200px);
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item:hover .carousel-img {
+  transform: scale(1.1);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Pause animation on hover */
+.carousel-container:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive design for Zallaq Riding Kit */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 250px;
+    height: 350px;
+  }
+  
+  .carousel-item {
+    width: 200px;
+    height: 300px;
+    left: 25px;
+    top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 200px;
+    height: 300px;
+  }
+  
+  .carousel-item {
+    width: 150px;
+    height: 250px;
+    left: 25px;
+    top: 25px;
+  }
+} 

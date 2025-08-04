@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "a1": "A1",
+    "zallaqSchool": "Zallaq School",
+    "contact": "Contact Us",
+    "allPages": "All Pages"
+  },
+  "hero": {
+    "title": "Welcome to A1 Stable",
+    "subtitle": "Excellence in Horse Endurance and Training"
+  },
+  "logos": {
+    "a1": {
+      "title": "A1 Endurance Team",
+      "description": "Professional endurance riding team specializing in long-distance competitions and training."
+    },
+    "zallaq": {
+      "title": "Zallaq Riding School",
+      "description": "A comprehensive riding school offering lessons for all levels, from beginners to advanced."
+    }
+  },
+  "slider": {
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening Hours",
+    "addressValue": "Zallaq, Bahrain",
+    "phoneValue": "+973 34444729",
+    "emailValue": "alzallaqridingschool@gmail.com",
+    "hoursValue": "Every day: 4:00 PM - 8:00 PM"
+  }
+} 
