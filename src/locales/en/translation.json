@@ -33,6 +33,21 @@
     "addressValue": "Zallaq, Bahrain",
     "phoneValue": "+973 34444729",
     "emailValue": "alzallaqridingschool@gmail.com",
-    "hoursValue": "Every day: 4:00 PM - 8:00 PM"
+    "hoursValue": "Every day: 4:00 PM - 8:00 PM",
+    "whatsapp": {
+      "title": "Contact Us on WhatsApp",
+      "subtitle": "Click to chat with us directly",
+      "button": "Chat on WhatsApp"
+    },
+    "registration": {
+      "title": "Registration Form",
+      "subtitle": "Fill out our registration form to join our programs",
+      "button": "Open Registration Form"
+    },
+    "instagram": {
+      "title": "Follow Us on Instagram",
+      "subtitle": "Stay updated with our latest photos and videos",
+      "button": "Follow on Instagram"
+    }
   }
 } 

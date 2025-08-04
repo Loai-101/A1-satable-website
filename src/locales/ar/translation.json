@@ -33,6 +33,21 @@
     "addressValue": "زلاق، البحرين",
     "phoneValue": "٩٧٣+ ٣٤٤٤٤٧٢٩",
     "emailValue": "alzallaqridingschool@gmail.com",
-    "hoursValue": "كل يوم: ٤:٠٠ م - ٨:٠٠ م"
+    "hoursValue": "كل يوم: ٤:٠٠ م - ٨:٠٠ م",
+    "whatsapp": {
+      "title": "تواصل معنا على واتساب",
+      "subtitle": "انقر للدردشة معنا مباشرة",
+      "button": "دردشة على واتساب"
+    },
+    "registration": {
+      "title": "نموذج التسجيل",
+      "subtitle": "املأ نموذج التسجيل للانضمام إلى برامجنا",
+      "button": "فتح نموذج التسجيل"
+    },
+    "instagram": {
+      "title": "تابعنا على إنستغرام",
+      "subtitle": "ابق على اطلاع بآخر الصور والفيديوهات",
+      "button": "متابعة على إنستغرام"
+    }
   }
 } 

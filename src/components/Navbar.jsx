@@ -52,22 +52,22 @@ const Navbar = () => {
             </button>
             <ul className={classNames('dropdown-menu', { 'show': isDropdownOpen })}>
               <li>
-                <Link to="/" className="dropdown-link" onClick={closeDropdown}>
+                <Link to="/" className="dropdown-link" onClick={() => { closeDropdown(); closeMobileMenu(); }}>
                   {t('nav.home')}
                 </Link>
               </li>
               <li>
-                <Link to="/a1" className="dropdown-link" onClick={closeDropdown}>
+                <Link to="/a1" className="dropdown-link" onClick={() => { closeDropdown(); closeMobileMenu(); }}>
                   {t('nav.a1')}
                 </Link>
               </li>
               <li>
-                <Link to="/zallaq-school" className="dropdown-link" onClick={closeDropdown}>
+                <Link to="/zallaq-school" className="dropdown-link" onClick={() => { closeDropdown(); closeMobileMenu(); }}>
                   {t('nav.zallaqSchool')}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="dropdown-link" onClick={closeDropdown}>
+                <Link to="/contact" className="dropdown-link" onClick={() => { closeDropdown(); closeMobileMenu(); }}>
                   {t('nav.contact')}
                 </Link>
               </li>

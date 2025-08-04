@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/HorseQuoteSection.css';
 
 const HorseQuoteSection = ({ lang = 'en' }) => {
   const backgroundImage =
@@ -23,35 +24,19 @@ const HorseQuoteSection = ({ lang = 'en' }) => {
 
   return (
     <section
+      className="horse-quote-section"
       style={{
-        background: "#F8F1EA",
-        padding: "80px 20px",
-        color: "#333",
-        position: "relative",
         direction: validLang === "ar" ? "rtl" : "ltr",
       }}
     >
       <div
+        className="horse-quote-container"
         style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          display: "flex",
-          alignItems: "center",
-          gap: "40px",
           flexDirection: validLang === "ar" ? "row-reverse" : "row",
         }}
       >
         {/* Square Image on Left */}
-        <div
-          style={{
-            flex: "0 0 400px",
-            height: "400px",
-            borderRadius: "15px",
-            overflow: "hidden",
-            boxShadow: "0 15px 35px rgba(139, 92, 44, 0.2)",
-            border: "3px solid #8B5C2C",
-          }}
-        >
+        <div className="horse-quote-image">
           <img
             src={backgroundImage}
             alt="Ali Hussain with Horse"
@@ -66,46 +51,14 @@ const HorseQuoteSection = ({ lang = 'en' }) => {
         </div>
 
         {/* Text Content on Right */}
-        <div
-          style={{
-            flex: "1",
-            padding: "30px",
-            backgroundColor: "rgba(255, 255, 255, 0.9)",
-            borderRadius: "15px",
-            boxShadow: "0 10px 25px rgba(139, 92, 44, 0.1)",
-            border: "2px solid rgba(139, 92, 44, 0.1)",
-          }}
-        >
-          <p 
-            style={{ 
-              fontSize: "1.2rem", 
-              lineHeight: "1.8",
-              marginBottom: "25px",
-              color: "#333",
-              fontFamily: "Georgia, serif",
-            }}
-          >
+        <div className="horse-quote-content">
+          <p className="horse-quote-text">
             {current.text}
           </p>
-          <h3 
-            style={{ 
-              marginTop: "20px", 
-              fontWeight: "bold",
-              color: "#8B5C2C",
-              fontSize: "1.5rem",
-              fontFamily: "Georgia, serif",
-            }}
-          >
+          <h3 className="horse-quote-name">
             {current.name}
           </h3>
-          <p 
-            style={{
-              color: "#8B0000",
-              fontSize: "1.1rem",
-              fontFamily: "Georgia, serif",
-              fontStyle: "italic",
-            }}
-          >
+          <p className="horse-quote-title">
             {current.title}
           </p>
         </div>

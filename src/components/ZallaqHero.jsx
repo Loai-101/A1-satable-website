@@ -11,9 +11,10 @@ const ZallaqHero = () => {
         {/* Zallaq Logo above the title */}
         <div className="hero-logo">
           <OptimizedImage
-            src="https://res.cloudinary.com/dvybb2xnc/image/upload/v1753893961/AL_Zallaq_Profile_Pic_mcoht9.png"
+            src="https://res.cloudinary.com/dvybb2xnc/image/upload/f_auto,q_auto,w_300,h_200/v1753893961/AL_Zallaq_Profile_Pic_mcoht9.png"
             alt="Zallaq Riding School Logo"
             className="hero-logo-img"
+            loading="eager"
           />
         </div>
         

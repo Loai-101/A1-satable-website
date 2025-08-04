@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import OptimizedImage from './OptimizedImage';
 
 const A1Hero = () => {
   const { t, i18n } = useTranslation();
@@ -9,10 +10,11 @@ const A1Hero = () => {
       <div className="hero-content">
         {/* A1 Logo above the title */}
         <div className="hero-logo">
-          <img
-            src="https://res.cloudinary.com/dvybb2xnc/image/upload/v1753893962/A1_Profile_Pic_g3srpu.png"
-            alt={i18n.language === 'ar' ? 'شعار A1' : 'A1 Logo'}
-          />
+                     <OptimizedImage
+             src="https://res.cloudinary.com/dvybb2xnc/image/upload/f_auto,q_auto,w_300,h_200/v1753893962/A1_Profile_Pic_g3srpu.png"
+             alt={i18n.language === 'ar' ? 'شعار A1' : 'A1 Logo'}
+             loading="eager"
+           />
         </div>
         
         <h1 className="hero-title">
